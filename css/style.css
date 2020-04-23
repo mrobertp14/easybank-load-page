@@ -24,6 +24,14 @@ body{
   width: 20px;
 }
 
+.desktop-nav{
+  display: none;
+}
+
+.desktop-button{
+  display: none;
+}
+
 .top-section{
   background-image: url("../images/bg-intro-mobile.svg");
   background-position: center center;
@@ -53,11 +61,13 @@ body{
 
 nav{
   background-color: #fff;
-  display:none;
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
   margin: 0 20px;
   text-align:center;
   padding: 20px;
+}
+.mobile-nav, .desktop-nav{
+  display: none;
 }
 a{
   color: black;
@@ -189,4 +199,64 @@ h3{
   padding: 30px 0 20px 0;
   font-size: 0.9rem;
   margin:0;
+}
+@media(min-width: 50rem){
+.top-nav {
+margin: 0 5%;
+padding: 20px 0 0 0;
+max-height: 80px;
+}
+  #hamburger{
+    display: none;
+  }
+
+  .desktop-nav{
+    color: #9597A5;
+    display: block;
+    position: relative;
+    bottom: 10px;
+
+  }
+  .desktop-nav  a{
+    color: #9597A5;
+    font-size: 14px;
+  }
+
+  .desktop-nav li{
+    display: inline;
+    padding: 0 10px;
+  }
+
+  .top-nav img{
+    max-width: 108px;
+    max-height: 20px;
+    padding: 0 30px;
+    position: relative;
+    top: 10px;
+  }
+
+
+  .desktop-button{
+    display: block;
+    font-size: 14px;
+    height: 44px;
+    padding:0 40px;
+
+  }
+
+  .intro-section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "intro picture";
+  }
+
+  .top-section{
+    grid-area: picture;
+
+  }
+  .intro{
+    grid-area: intro;
+
+  }
 }

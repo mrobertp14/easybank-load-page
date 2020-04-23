@@ -5,7 +5,7 @@ window.addEventListener("load", (evt) =>{
   domStrings = {
     hamburger: document.querySelector('#hamburger'),
     close: document.querySelector('#close'),
-    nav: document.querySelector("nav"),
+    nav: document.querySelector(".mobile-nav"),
     topSection: document.querySelector(".top-section"),
     mockups: document.querySelector('#mockups'),
     intro: document.querySelector(".intro")
