@@ -3,9 +3,10 @@
 
 body{
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Public Sans', sans-serif;
+  line-height: 1.3;
 }
-
+/*-----Navigation------*/
 .top-nav{
   display:flex;
   justify-content: space-between;
@@ -24,8 +25,7 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 280px;
-  padding:20px;
+  height:280px;
   padding-bottom: 0;
   padding-top: 0;
   text-align: center;
@@ -44,13 +44,14 @@ body{
 
 .fade-top-section{
     padding-top: 20px;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("../images/bg-intro-mobile.svg");
+  background-image: linear-gradient( rgb(45, 49, 77), rgba(35,49,77, 0.5) ),url("../images/bg-intro-mobile.svg");
 }
 
 nav{
   background-color: #fff;
   display:none;
   font-family: Arial, sans-serif;
+  margin: 0 20px;
   text-align:center;
   padding: 20px;
 }
@@ -69,4 +70,58 @@ ol{
 li{
   padding: 12.5px 0 12px 0;
   text-decoration: none;
+}
+
+/*----intro section-------*/
+.intro{
+
+
+  text-align: center;
+  padding:  50px 0 120px 0;
+
+}
+.hide-intro{
+background: linear-gradient( rgb(45, 49, 77,0.5), rgba(35,49,77, 0) );
+}
+h1{
+  font-family: 'Public Sans', sans-serif;
+ font-size:2.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+p{
+  color: #707070;
+  line-height: 2;
+  margin:0 20px 0 20px;
+  padding: 10px 0 40px 0;
+}
+
+button{
+  background: linear-gradient(to right, #33D35E, #2AB6D9);
+  border-radius: 30px;
+  border:none;
+  color: #fff;
+ padding:15px 40px;
+
+}
+
+/*---top-middle-section---*/
+.top-middle-section{
+  margin:0;
+  padding: 50px 20px;
+  text-align: center;;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top:0;
+}
+
+/*----icon-card-----*/
+h3{
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
 }

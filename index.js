@@ -6,7 +6,8 @@ window.addEventListener("load", (evt) =>{
     hamburger: document.querySelector('.nav-img'),
     nav: document.querySelector("nav"),
     topSection: document.querySelector(".top-section"),
-    mockups: document.querySelector('#mockups')
+    mockups: document.querySelector('#mockups'),
+    intro: document.querySelector(".intro")
   };
 
   domStrings.hamburger.addEventListener("click", (evt)=>{
@@ -14,12 +15,14 @@ window.addEventListener("load", (evt) =>{
           domStrings.nav.style.display = "block";
           domStrings.mockups.style.display="none";
           domStrings.topSection.classList.add("fade-top-section");
+          domStrings.intro.classList.add("hide-intro");
           showMenu =true;
         }
         else{
           domStrings.nav.style.display = "none";
           domStrings.mockups.style.display="inline-block";
           domStrings.topSection.classList.remove("fade-top-section");
+          domStrings.intro.classList.remove("hide-intro");
           showMenu =false;
         }
   });
