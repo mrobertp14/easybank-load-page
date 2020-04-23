@@ -107,10 +107,17 @@ button{
 }
 
 /*---top-middle-section---*/
-.top-middle-section{
+.top-middle-section, .bottom-middle-section{
   margin:0;
   padding: 50px 20px;
   text-align: center;;
+}
+.top-middle-section{
+  background-color: #F4F5F7;
+}
+.bottom-middle-section{
+  background-color: #fafafa;
+    overflow:hidden;
 }
 
 h2{
@@ -124,4 +131,33 @@ h3{
   font-weight: 300;
   letter-spacing: 1px;
   font-size: 1.3rem;
+}
+
+/*---img-card----*/
+
+.bottom-middle-section img{
+  height: 200px;
+  width: 330px;
+
+}
+.img-card{
+  background-color: #fff;
+  margin: 0 20px 30px 20px;
+  text-align: left;
+}
+.bottom-middle-section h3{
+  font-size: 1rem;
+  font-weight: 400;
+  margin:0;
+  padding: 0 5px 0 20px;
+}
+
+.bottom-middle-section p{
+  font-size: 0.8rem;
+}
+
+.author{
+  font-size: 0.6rem;
+  margin:0;
+  padding: 10px 20px;
 }
