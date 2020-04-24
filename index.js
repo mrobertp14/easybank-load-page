@@ -8,7 +8,8 @@ window.addEventListener("load", (evt) =>{
     nav: document.querySelector(".mobile-nav"),
     topSection: document.querySelector(".top-section"),
     mockups: document.querySelector('#mockups'),
-    intro: document.querySelector(".intro")
+    introWords: document.querySelector(".intro-words")
+
   };
 
   domStrings.hamburger.addEventListener("click", (evt)=>{
@@ -18,7 +19,7 @@ window.addEventListener("load", (evt) =>{
           domStrings.nav.style.display = "block";
           domStrings.mockups.style.display="none";
           domStrings.topSection.classList.add("fade-top-section");
-          domStrings.intro.classList.add("hide-intro");
+          domStrings.introWords.classList.remove("intro-words");
           showMenu =true;
         }
   });
@@ -30,7 +31,7 @@ window.addEventListener("load", (evt) =>{
       domStrings.nav.style.display = "none";
       domStrings.mockups.style.display="inline-block";
       domStrings.topSection.classList.remove("fade-top-section");
-      domStrings.intro.classList.remove("hide-intro");
+      domStrings.introWords.classList.add("intro-words");
       showMenu =false;
     }
 });

@@ -12,7 +12,6 @@ body{
   justify-content: space-between;
   padding: 25px 20px;
   overflow: hidden;
-  z-index:1;
 }
 .nav-img{
   position: relative;
@@ -32,31 +31,39 @@ body{
   display: none;
 }
 
+/*---top-section----*/
+
 .top-section{
+
   background-image: url("../images/bg-intro-mobile.svg");
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: 0 -100px;
   background-size: cover;
-  height:280px;
-  padding-bottom: 0;
-  padding-top: 0;
+  font-family: 'Public Sans', sans-serif;
+  height: 800px;
   text-align: center;
   overflow: hidden;
-  z-index:-1;
 }
+
+
 
  #mockups{
   height: 401px;
   width: 325px;
-  position:relative;
-  bottom: 109px;
-
-
+  position: relative;
+  bottom:107px;
+  overflow: hidden;
+}
+.intro-words{
+  position: relative;
+  bottom:107px;
 }
 
+
 .fade-top-section{
-    padding-top: 20px;
-  background-image: linear-gradient( rgb(45, 49, 77), rgba(35,49,77, 0.5) ),url("../images/bg-intro-mobile.svg");
+  background: linear-gradient( rgb(45, 49, 77), rgba(35,49,77, 0) )
+  padding-top: 20px;
+  background-image: linear-gradient( rgb(45, 49, 77), rgba(35,49,77, 0) ),url("../images/bg-intro-mobile.svg");
 }
 
 nav{
@@ -87,21 +94,19 @@ li{
 }
 
 /*----intro section-------*/
-.intro{
 
 
-  text-align: center;
-  padding:  50px 0 120px 0;
-
-}
-.hide-intro{
-background: linear-gradient( rgb(45, 49, 77,0.5), rgba(35,49,77, 0) );
-}
 h1{
-  font-family: 'Public Sans', sans-serif;
- font-size:2.5rem;
+
+  font-size:2.5rem;
   font-weight: 300;
-  margin: 0;
+  padding: 20px;
+  font-weight: 300;
+}
+
+.moveh1{
+  position: relative;
+  top: 0px;
 }
 
 p{
@@ -151,7 +156,7 @@ h3{
 
 .bottom-middle-section img{
   height: 200px;
-  width: 330px;
+  width: 100%;
 
 }
 .img-card{
@@ -244,19 +249,85 @@ max-height: 80px;
 
   }
 
-  .intro-section{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-    "intro picture";
-  }
-
   .top-section{
-    grid-area: picture;
-
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-position: 45vw -230px;
+    height: 656px;
   }
-  .intro{
-    grid-area: intro;
 
+  #mockups{
+    width: 729px;
+    height: 900px;
+    left: 35vw;
   }
+.intro-words{
+  position: relative;
+  bottom: 830px;
+  padding-left: 10vw;
+  text-align: left;
+  width: 30%;
+}
+
+.top-middle-section, .bottom-middle-section, .contact-section{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+}
+
+h2{
+  grid-column: 1/5;
+    text-align: left;
+
+}
+.top-middle-section p{
+  grid-column: 1/5;
+  margin: 0;
+
+  text-align: left;
+}
+.icon-card{
+  padding-right: 10%;
+}
+.top-middle-section > p{
+
+width: 30%;
+}
+.contact-section{
+  padding: 23px 40px;
+}
+.social-logo{
+  padding-top: 15px;
+  margin: 0 auto;
+  grid-column: 1/2;
+}
+.social-links{
+  grid-column: 1/2;
+
+  padding: 0;
+  margin: 0;
+}
+.contact-section ol{
+  display: flex;
+  justify-content:space-between;
+
+  grid-column: 2/3;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+}
+.contact-section li{
+}
+.btn-end{
+  grid-column: 4/5
+}
+.col1{
+  display: inline-block;
+}
+.col2{
+  display: inline-block;
+}
+
+  .
 }
